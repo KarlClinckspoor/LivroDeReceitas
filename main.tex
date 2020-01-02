@@ -1,0 +1,43 @@
+\documentclass{book}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+\title{Livro de receitas}
+\author{Karl Jan Clinckspoor}
+\date{\today}
+
+\newcommand{\receita}[3]{
+\section{#1}
+\textbf{Ingredientes}
+#2
+\noindent \textbf{Preparo}
+#3
+\clearpage
+}
+
+\newcommand{\fotoreceita}[2]{
+\begin{center}
+    \includegraphics[width=#1]{#2}
+\end{center}
+}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\chapter{Receitas salgadas}
+\begin{center} \includegraphics[width=0.7\textwidth]{Fotos/foto_savory}\end{center}
+\clearpage
+\include{ReceitasSalgadas}
+
+\chapter{Receitas doces}
+\begin{center} \includegraphics[width=0.7\textwidth]{Fotos/foto_sweet} \end{center}
+\clearpage
+\include{ReceitasDoces}
+
+% \begin{itemize} \item \end{itemize}
+
+\end{document}

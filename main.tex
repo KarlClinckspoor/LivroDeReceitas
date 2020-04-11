@@ -5,14 +5,38 @@
 \usepackage{amssymb}
 \usepackage{multicol}
 \usepackage{hyperref}
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage[framemethod=tikz]{mdframed}
+% \usepackage{framed}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+\setitemize{itemsep=-5pt}
 
 \title{Livro de receitas} \author{Karl Jan Clinckspoor} \date{\today}
 
+\titleformat
+    {\section}
+    % [display]
+    {\Large\bfseries}
+    {Receita \thesection:}
+    {0.5ex}
+    {\centering}
+    {}
 % Comandos customizados
+\newmdenv[roundcorner=10pt, backgroundcolor=gray!10,frametitle=Ingredientes]{Ingredientes}
+
 \newcommand{\receita}[3]{
   \section{#1}
-  \textbf{Ingredientes} #2
-  \noindent \textbf{Preparo} #3
+  \begin{minipage}[t]{0.3\textwidth} %
+    \begin{Ingredientes}
+      \noindent
+      #2
+    \end{Ingredientes}
+  \end{minipage}%
+  \quad  \begin{minipage}[t]{0.65\textwidth}
+    \noindent \textbf{Preparo} #3
+  \end{minipage}
   \clearpage
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 

@@ -42,6 +42,34 @@
   \end{minipage}
   \clearpage
 }
+
+\newcommand{\receitatrescols}[5]{
+  \vspace*{0.1cm}
+  \section{#1}
+  \begin{minipage}[t]{0.3\textwidth} %
+    \begin{Ingredientes}
+      \noindent
+      #2
+    \end{Ingredientes}
+  \end{minipage}%
+  \quad \begin{minipage}[t]{0.3\textwidth} %
+    \begin{Ingredientes}
+      \noindent
+      #3
+    \end{Ingredientes}
+  \end{minipage}%
+ \quad \begin{minipage}[t]{0.3\textwidth} %
+    \begin{Ingredientes}
+      \noindent
+      #4
+    \end{Ingredientes}
+  \end{minipage}
+  
+  \begin{minipage}[t]{\textwidth}
+    \noindent \begin{Preparo} #5    \end{Preparo}
+  \end{minipage}
+  \clearpage
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \newcommand{\fotoreceita}[2]{
   \begin{center}

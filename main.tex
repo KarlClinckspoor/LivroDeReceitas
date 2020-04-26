@@ -29,7 +29,12 @@
 \newmdenv[roundcorner=10pt, backgroundcolor=gray!10,frametitle=Ingredientes, skipabove=0pt]{Ingredientes}
 \newmdenv[frametitle=Preparo, skipabove=0pt, linewidth=0]{Preparo}
 
-\newcommand\pimenta{\includegraphics[height=0.5cm]{./emojis/pimenta.pdf}}
+\newdimen\emojiheight
+\emojiheight=1cm
+\newcommand\pimenta{\includegraphics[height=\emojiheight]{./emojis/pimenta}}
+\newcommand{\testado}{\includegraphics[height=\emojiheight]{./emojis/checkmark}}
+\newcommand{\karlAprova}{\includegraphics[height=\emojiheight]{./emojis/karl_aprova}}
+\newcommand{\karenAprova}{\includegraphics[height=\emojiheight]{./emojis/karen_aprova}}
 
 
 \newcommand{\receita}[3]{

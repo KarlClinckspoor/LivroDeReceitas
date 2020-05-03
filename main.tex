@@ -80,6 +80,49 @@
   \clearpage
 }
 
+% Entender pq não está funcionando
+\newcommand{\receitatrescolsemoji}[6]{
+  \vspace*{0.1cm}
+  \section{#2}
+
+  % Se tem emoji, colocar, senão, ficar em branco
+  \ifthenelse{%
+    \isempty{#1}
+  }%
+  {}%
+  {%
+    \begin{mdframed}[userdefinedwidth=4cm, align=center, linewidth=0]
+      \centering
+      #1
+    \end{mdframed}
+  }
+
+  % Começar os ingredientes
+  \begin{minipage}[t]{0.3\textwidth} %
+    \begin{Ingredientes}
+      \noindent
+      #3
+    \end{Ingredientes}
+  \end{minipage}%
+  \quad \begin{minipage}[t]{0.3\textwidth} %
+    \begin{Ingredientes}
+      \noindent
+      #4
+    \end{Ingredientes}
+  \end{minipage}%
+  \quad \begin{minipage}[t]{0.3\textwidth} %
+    \begin{Ingredientes}
+      \noindent
+      #5
+    \end{Ingredientes}
+  \end{minipage}
+  
+  \begin{minipage}[t]{\textwidth}
+    \noindent \begin{Preparo} #6    \end{Preparo}
+  \end{minipage}
+  \clearpage
+}
+
 \newcommand{\receitatrescols}[5]{
   \vspace*{0.1cm}
   \section{#1}
@@ -101,6 +144,7 @@
       #4
     \end{Ingredientes}
   \end{minipage}
+  \vfill
   
   \begin{minipage}[t]{\textwidth}
     \noindent \begin{Preparo} #5    \end{Preparo}
@@ -132,6 +176,9 @@
 	\includegraphics[width=0.7\textwidth]{Fotos/foto_sweet} \end{center}
 \clearpage
 \include{ReceitasDoces}
+
+\chapter{Informações adicionais}
+\include{apendices}
 
 % \begin{itemize} \item \end{itemize}
 

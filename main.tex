@@ -17,6 +17,16 @@
 
 \title{Livro de receitas} \author{Karl Jan Clinckspoor} \date{\today}
 
+% Define se é para colocar figuras e emojis na versão final
+\newcommand{\incluirFigura}{false}   
+% Cria função para checar se é para colocar figura
+\newcommand{\condicionalFigura}[1]{
+  \ifthenelse{\equal{\incluirFigura}{true}}%
+  {#1}%
+  {}
+}
+
+% Define como que as receitas são formatadas
 \titleformat
     {\section}  % command
     % [display] % shape
@@ -25,10 +35,17 @@
     {0.5ex}  % sep
     {\centering}  % before-code
     [\vspace{1cm}] % after-code
-% Comandos customizados
-\newmdenv[roundcorner=10pt, backgroundcolor=gray!10,frametitle=Ingredientes, skipabove=0pt]{Ingredientes}
+
+% Quadros customizados
+% Se for para usar figuras, colocar o fundo cinza, senão, sem fundo.
+\ifthenelse{\equal{\incluirFigura}{true}}{
+  \newmdenv[roundcorner=10pt, backgroundcolor=gray!10,frametitle=Ingredientes,skipabove=0pt]{Ingredientes}
+}{
+  \newmdenv[roundcorner=10pt, backgroundcolor=white,frametitle=Ingredientes,skipabove=0pt]{Ingredientes}
+}
 \newmdenv[frametitle=Preparo, skipabove=0pt, linewidth=0]{Preparo}
 
+% Configurar os emojis
 \newdimen\emojiheight
 \emojiheight=1cm
 \newcommand\pimenta{\includegraphics[height=\emojiheight]{./emojis/pimenta}}
@@ -36,7 +53,8 @@
 \newcommand{\karlAprova}{\includegraphics[height=\emojiheight]{./emojis/karl_aprova}}
 \newcommand{\karenAprova}{\includegraphics[height=\emojiheight]{./emojis/karen_aprova}}
 
-
+% Configurar os comandos de receita
+% Receita simples, sem os emojis
 \newcommand{\receita}[3]{
   \vspace*{0.1cm}
   \section{#1}
@@ -52,20 +70,24 @@
   \clearpage
 }
 
+% Receita com uma caixa adicional de emojis
 \newcommand{\receitaemoji}[4][]{
   \vspace*{0.1cm}
   \section{#2}
 
-  % If has emojis, add them to box. If not, add nothing
-  \ifthenelse{%
-    \isempty{#1}
-  }%
-  {}%
-  {%
-    \begin{mdframed}[userdefinedwidth=4cm, align=center, linewidth=0]
-      \centering
-      #1
-    \end{mdframed}
+  % Se é para imprimir figuras, coloca emoji. Senão, não.
+  \condicionalFigura{
+    % Se tem emoji, coloca na caixa. Senão, fica vazio
+    \ifthenelse{%
+      \isempty{#1}
+    }%
+    {}%
+    {%
+      \begin{mdframed}[userdefinedwidth=4cm, align=center, linewidth=0]
+        \centering
+        #1
+      \end{mdframed}
+    }
   }
 
   \begin{minipage}[t]{0.3\textwidth} %
@@ -85,16 +107,19 @@
   \vspace*{0.1cm}
   \section{#2}
 
-  % Se tem emoji, colocar, senão, ficar em branco
-  \ifthenelse{%
-    \isempty{#1}
-  }%
-  {}%
-  {%
-    \begin{mdframed}[userdefinedwidth=4cm, align=center, linewidth=0]
-      \centering
-      #1
-    \end{mdframed}
+  % Se for para colocar figura, coloca emoji
+  \condicionalFigura{
+    % Se tem emoji, colocar, senão, ficar em branco
+    \ifthenelse{%
+      \isempty{#1}
+    }%
+    {}%
+    {%
+      \begin{mdframed}[userdefinedwidth=4cm, align=center, linewidth=0]
+        \centering
+        #1
+      \end{mdframed}
+    }
   }
 
   % Começar os ingredientes
@@ -123,6 +148,7 @@
   \clearpage
 }
 
+% Para receitas com muitos ingredientes, que precisam de cuidados especiais
 \newcommand{\receitatrescols}[5]{
   \vspace*{0.1cm}
   \section{#1}
@@ -151,36 +177,44 @@
   \end{minipage}
   \clearpage
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+% Comando para incluir uma foto de receita sem ter que usar o includegraphics.
+% Útil no futuro caso eu queira padronizar alguma coisa
 \newcommand{\fotoreceita}[2]{
+  \condicionalFigura{
   \begin{center}
     \includegraphics[width=#1]{#2}
   \end{center}
+  }
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+% Comando para facilitar colocar temperaturas
 \newcommand{\grau}{$^\circ$}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+% Início do documento
 \begin{document}
 
 \maketitle
 \tableofcontents
 
 \chapter{Receitas salgadas}
+\condicionalFigura{
 \begin{center}
-	\includegraphics[width=0.7\textwidth]{./Fotos/foto_savory}\end{center}
+    \includegraphics[width=0.7\textwidth]{./Fotos/foto_savory}\end{center}
+  }
 \clearpage
 \include{ReceitasSalgadas}
 
 \chapter{Receitas doces}
+\condicionalFigura{
 \begin{center}
 	\includegraphics[width=0.7\textwidth]{Fotos/foto_sweet} \end{center}
+}
 \clearpage
 \include{ReceitasDoces}
 
 \chapter{Informações adicionais}
 \include{apendices}
-
-% \begin{itemize} \item \end{itemize}
 
 \end{document}
 

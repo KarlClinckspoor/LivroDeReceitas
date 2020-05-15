@@ -1,4 +1,5 @@
 \documentclass{book}
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[brazil]{babel}
 \usepackage{graphicx}
@@ -12,10 +13,14 @@
 \usepackage{enumitem}
 \usepackage{xifthen}
 
+\title{Livro de receitas} \author{Karl Jan Clinckspoor} \date{\today}
+
+% Configura o espaçamento dos itens
 \setitemize{itemsep=0pt}
 \setenumerate{itemsep=0pt}
+% Configura o cabeçalho e rodapé
+\pagestyle{empty}
 
-\title{Livro de receitas} \author{Karl Jan Clinckspoor} \date{\today}
 
 % Define se é para colocar figuras e emojis na versão final
 \newcommand{\incluirFigura}{false}   
@@ -31,7 +36,8 @@
     {\section}  % command
     % [display] % shape
     {\Large\bfseries}  % format
-    {Receita \thesection:}  % label
+    % {Receita \thesection:}  % label
+    {}  % label
     {0.5ex}  % sep
     {\centering}  % before-code
     [\vspace{1cm}] % after-code
@@ -194,26 +200,28 @@
 % Início do documento
 \begin{document}
 
-\maketitle
-\tableofcontents
+% Seleciona a fonte
+% \fontfamily{phv}\selectfont
+% \maketitle
+% \tableofcontents
 
-\chapter{Receitas salgadas}
-\condicionalFigura{
-	\begin{center}
-		\includegraphics[width=0.7\textwidth]{./Fotos/foto_savory}\end{center}
-}
-\clearpage
+% \chapter{Receitas salgadas}
+% \condicionalFigura{
+% 	\begin{center}
+% 		\includegraphics[width=0.7\textwidth]{./Fotos/foto_savory}\end{center}
+% }
+% \clearpage
 \include{ReceitasSalgadas}
 
-\chapter{Receitas doces}
-\condicionalFigura{
-	\begin{center}
-		\includegraphics[width=0.7\textwidth]{Fotos/foto_sweet} \end{center}
-}
-\clearpage
+% \chapter{Receitas doces}
+% \condicionalFigura{
+% 	\begin{center}
+% 		\includegraphics[width=0.7\textwidth]{Fotos/foto_sweet} \end{center}
+% }
+% \clearpage
 \include{ReceitasDoces}
 
-\chapter{Informações adicionais}
+% \chapter{Informações adicionais}
 \include{apendices}
 
 \end{document}

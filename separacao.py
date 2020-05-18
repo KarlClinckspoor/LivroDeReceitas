@@ -1,3 +1,5 @@
+import os
+
 test_string = r"""
 \receita{Peito de frango com alecrim, sálvia, alho e limão}{
 	\begin{itemize}
@@ -62,14 +64,28 @@ def find_recipes(string: str) -> list:
 
 
 def export_recipe(recipe: str) -> None:
-    recipe_title = recipe[recipe.find('{'):recipe.find('}')+1]
+    recipe_title = recipe[recipe.find('{')+1:recipe.find('}')]
     # TODO: Are there other things to clean?
-    clean_recipe_title = recipe_title.replace('\\checkmark', '')
+    clean_recipe_title = recipe_title.replace('\\checkmark', '').replace(' ', '_').replace('/', '_')
     with open(clean_recipe_title+'.tex', 'w') as fhand:
         fhand.write(recipe)
+        print(f'Outputted recipe {clean_recipe_title}')
+        add_recipe_file(clean_recipe_title, 'recipes.tex')
+        print('Added include string to recipes.tex')
+
+
+def add_recipe_file(recipe_file_name: str, main_tex_file: str) -> None:
+    if os.path.isfile(main_tex_file):
+        mode = 'a'
+    else:
+        mode = 'w'
+    includestring = r"\input{" + f"{recipe_file_name}" + "}\n"
+    with open(main_tex_file, mode) as fhand:
+        fhand.write(includestring)
 
 
 if __name__ == '__main__':
     fhand = open('ReceitasSalgadas.tex', 'r').read()
     recipes = find_recipes(fhand)
-    print(recipes[0], '\n\n\n', recipes[-1])
+    for recipe in recipes:
+        export_recipe(recipe)

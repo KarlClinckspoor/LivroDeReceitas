@@ -1,4 +1,5 @@
 import os
+import unicodedata
 
 test_string = r"""
 \receita{Peito de frango com alecrim, sálvia, alho e limão}{
@@ -66,7 +67,12 @@ def find_recipes(string: str) -> list:
 def export_recipe(recipe: str) -> None:
     recipe_title = recipe[recipe.find('{')+1:recipe.find('}')]
     # TODO: Are there other things to clean?
-    clean_recipe_title = recipe_title.replace('\\checkmark', '').replace(' ', '_').replace('/', '_')
+    # Remove unwanted characters
+    clean_recipe_title = recipe_title.replace('\\checkmark', '').replace('/', '').strip()
+    # Capitalize each word
+    clean_recipe_title = ''.join(list(map(str.capitalize, clean_recipe_title.split())))
+    # Remove accents
+    clean_recipe_title = unicodedata.normalize('NFD', clean_recipe_title).encode('ascii', 'ignore').decode('utf-8')
     with open(clean_recipe_title+'.tex', 'w') as fhand:
         fhand.write(recipe)
         print(f'Outputted recipe {clean_recipe_title}')

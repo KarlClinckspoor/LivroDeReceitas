@@ -23,7 +23,7 @@
 
 
 % Define se é para colocar figuras e emojis na versão final
-\newcommand{\incluirFigura}{false}   
+\newcommand{\incluirFigura}{true}   
 % Cria função para checar se é para colocar figura
 \newcommand{\condicionalFigura}[1]{
   \ifthenelse{\equal{\incluirFigura}{true}}%
@@ -211,7 +211,8 @@
 % 		\includegraphics[width=0.7\textwidth]{./Fotos/foto_savory}\end{center}
 % }
 % \clearpage
-\include{ReceitasSalgadas}
+% \include{ReceitasSalgadas}
+\include{ReceitasSalgadas/ReceitasSalgadas}
 
 % \chapter{Receitas doces}
 % \condicionalFigura{
@@ -219,7 +220,7 @@
 % 		\includegraphics[width=0.7\textwidth]{Fotos/foto_sweet} \end{center}
 % }
 % \clearpage
-\include{ReceitasDoces}
+\include{ReceitasDoces/ReceitasDoces}
 
 % \chapter{Informações adicionais}
 \include{apendices}

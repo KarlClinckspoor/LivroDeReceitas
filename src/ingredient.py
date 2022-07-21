@@ -1,4 +1,5 @@
-from cleaner import clean_for_latex
+from src.cleaner import clean_for_latex
+from string import Template
 
 class Ingredient:
 
@@ -8,14 +9,14 @@ class Ingredient:
     observation_str = 'obs'
     name_str = 'nome'
 
-    latex_template = r"\item {quantity} {unit} de {name}. ({obs})"
+    latex_template = Template(r"\item $quantity $unit de $name. ($obs)")
     def __init__(self, ingredient: dict[str, str]):
         self.name: str = ingredient.get(self.name_str, '')
         try:
-            self.quantity: int = int(ingredient.get(self.quantity_str, ''))
+            self.quantity: float = float(ingredient.get(self.quantity_str, ''))
         except ValueError as e:
             print(f"Exception {e}. Quantity added isn't a valid number, replaced with 0")
-            self.quantity: int = 0
+            self.quantity: float = 0
         self.unit: str = ingredient.get(self.unit_str, '')
         self.observation: str = clean_for_latex(ingredient.get(self.observation_str, ''))
 
@@ -26,7 +27,7 @@ class Ingredient:
         if self.unit == '':
             raise Warning("Ingredient added without unit! Will appear blank")
 
-    def to_latex(self, template: str | None = None) -> str:
-        if not template:
-            template = self.latex_template
-        return self.latex_template.format(quantity = self.quantity, unit = self.unit, name = self.name, obs = self.observation) + '\n'
+    def to_latex(self, latex_template: Template | None = None) -> str:
+        if not latex_template:
+            latex_template = self.latex_template
+        return latex_template.substitute(quantity = self.quantity, unit = self.unit, name = self.name, obs = self.observation) + '\n'

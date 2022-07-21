@@ -1,3 +1,6 @@
+from string import Template
+from src.cleaner import clean_for_latex
+
 class Header:
     # header
     name_str = "nome"
@@ -9,7 +12,7 @@ class Header:
     tags_str = 'tags'
     tested_str = 'testado'
 
-    latex_template = r"\receitaemoji[{tested}{approveK}{approveKK}]\{{name}{label}\}"
+    latex_template = Template(r'\receitaemoji[$tested $approveK $approveKK]{$name $label}')
 
     def __init__(self, header: dict):
         self._header = header
@@ -22,7 +25,9 @@ class Header:
         self.approveK = header.get(self.approve_K_str, "")
         self.approve_KK = header.get(self.approve_KK_str, "")
 
-    def to_latex(self, latex_template: str | None = None):
+
+
+    def to_latex(self, latex_template: Template | None = None):
         if not latex_template:
             latex_template = self.latex_template
-        latex_template.format(tested = self.tested, approveK = self.approveK, approveKK = self.approve_KK, name=self.name, label=self.label)
+        return latex_template.substitute(tested = self.tested, approveK = self.approveK, approveKK = self.approve_KK, name=self.name, label=self.label)

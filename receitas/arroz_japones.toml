@@ -1,0 +1,43 @@
+[cabecalho]
+nome = "Arroz Japonês"
+testado = true
+karlAprova = true
+karenAprova = true
+label = "rec:arroz_japones"
+foto = ""
+tipo = "salgado"
+tags = ["arroz", "japonesa", "simples", "almoço", "janta"]
+
+[[ingredientes]]
+qtde = 0.75
+unidade = "xícara"
+nome = "arroz japonês"
+obs = "(1 medida de copo de arroz). A receita é bastante flexível, pode usar mais"
+
+[[modoDePreparo]]
+descr = "Colocar o arroz na panela de cozimento, enxaguar 3 vezes com água da torneira para tirar a farinha de arroz."
+footnote = "(Inspirado neste vídeo: https://www.youtube.com/watch?v=KnBD57yN2Ow)"
+
+[[modoDePreparo]]
+descr =    "Cobrir o arroz com água, deixar +- 1 falange do dedo indicador de água sobrando."
+
+[[modoDePreparo]]
+descr =    "Colocar no fogo alto e deixar sem tampa até começar a ferver."
+
+[[modoDePreparo]]
+descr =    "Ficar de olho quando a altura da água atingir o topo do arroz. Nesse ponto, abaixar o fogo ao mínimo e cobrir com uma tampa. Deixar cozinhando por 10-12 minutos (12-15 minutos se for mais arroz). Se começar a subir água pela panela e cair, abrir um pouquinho para aliviar, mas não muito senão seca."
+
+[[modoDePreparo]]
+descr = "Depois do período terminar, tirar do fogo e deixar por 5 minutos descansando"
+
+[[modoDePreparo]]
+descr =    "Usar uma colher de arroz para abrir o arroz, fazendo movimentos de corte e levantando."
+
+[NotasExtras]
+descr = """18:08: Arroz lavado foi colocado na boca menor do fogão. 3 medidas de arroz (3 x 3/4 xícara).
+
+18:19: Início da fervura
+
+18:20: Nível da água atingiu o nível do arroz
+
+18:31: Cozimento terminado"""

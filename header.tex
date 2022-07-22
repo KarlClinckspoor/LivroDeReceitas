@@ -1,0 +1,199 @@
+\documentclass{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage[framemethod=tikz]{mdframed}
+% \usepackage{framed}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xifthen}
+\usepackage{pdflscape}
+
+\title{Livro de receitas} \author{Karl Jan Clinckspoor} \date{\today}
+
+% Configura o espaçamento dos itens
+\setitemize{itemsep=0pt}
+\setenumerate{itemsep=0pt}
+% Configura o cabeçalho e rodapé
+\pagestyle{empty}
+
+
+% Define se é para colocar figuras e emojis na versão final
+\newcommand{\incluirFigura}{true}   
+% Cria função para checar se é para colocar figura
+\newcommand{\condicionalFigura}[1]{
+  \ifthenelse{\equal{\incluirFigura}{true}}%
+  {#1}%
+  {}
+}
+
+% Define como que as receitas são formatadas
+\titleformat
+    {\section}  % command
+    % [display] % shape
+    {\Large\bfseries}  % format
+    % {Receita \thesection:}  % label
+    {}  % label
+    {0.5ex}  % sep
+    {\centering}  % before-code
+    [\vspace{1cm}] % after-code
+
+% Quadros customizados
+% Se for para usar figuras, colocar o fundo cinza, senão, sem fundo.
+\ifthenelse{\equal{\incluirFigura}{true}}{
+  \newmdenv[roundcorner=10pt, backgroundcolor=gray!10,frametitle=Ingredientes,skipabove=0pt]{Ingredientes}
+}{
+  \newmdenv[roundcorner=10pt, backgroundcolor=white,frametitle=Ingredientes,skipabove=0pt]{Ingredientes}
+}
+\newmdenv[frametitle=Preparo, skipabove=0pt, linewidth=0]{Preparo}
+
+% Configurar os emojis
+\newdimen\emojiheight
+\emojiheight=1cm
+\newcommand\pimenta{\includegraphics[height=\emojiheight]{./emojis/pimenta}}
+\newcommand{\testado}{\includegraphics[height=\emojiheight]{./emojis/checkmark}}
+\newcommand{\karlAprova}{\includegraphics[height=\emojiheight]{./emojis/karl_aprova}}
+\newcommand{\karenAprova}{\includegraphics[height=\emojiheight]{./emojis/karen_aprova}}
+
+% Configurar os comandos de receita
+% Receita simples, sem os emojis
+\newcommand{\receita}[3]{
+  \vspace*{0.1cm}
+  \section{#1}
+  \begin{minipage}[t]{0.3\textwidth} %
+    \begin{Ingredientes}
+      \noindent
+      #2
+    \end{Ingredientes}
+  \end{minipage}%
+  \quad  \begin{minipage}[t]{0.65\textwidth}
+    \noindent \begin{Preparo} #3    \end{Preparo}
+  \end{minipage}
+  \clearpage
+}
+
+% Receita com uma caixa adicional de emojis
+\newcommand{\receitaemoji}[4][]{
+  \vspace*{0.1cm}
+  \section{#2}
+
+  % Se é para imprimir figuras, coloca emoji. Senão, não.
+  \condicionalFigura{
+    % Se tem emoji, coloca na caixa. Senão, fica vazio
+    \ifthenelse{%
+      \isempty{#1}
+    }%
+    {}%
+    {%
+      \begin{mdframed}[userdefinedwidth=4cm, align=center, linewidth=0]
+        \centering
+        #1
+      \end{mdframed}
+    }
+  }
+
+  \begin{minipage}[t]{0.3\textwidth} %
+    \begin{Ingredientes}
+      \noindent
+      #3
+    \end{Ingredientes}
+  \end{minipage}%
+  \quad  \begin{minipage}[t]{0.65\textwidth}
+    \noindent \begin{Preparo} #4    \end{Preparo}
+  \end{minipage}
+  \clearpage
+}
+
+% Entender pq não está funcionando
+\newcommand{\receitatrescolsemoji}[6]{
+  \vspace*{0.1cm}
+  \section{#2}
+
+  % Se for para colocar figura, coloca emoji
+  \condicionalFigura{
+    % Se tem emoji, colocar, senão, ficar em branco
+    \ifthenelse{%
+      \isempty{#1}
+    }%
+    {}%
+    {%
+      \begin{mdframed}[userdefinedwidth=4cm, align=center, linewidth=0]
+        \centering
+        #1
+      \end{mdframed}
+    }
+  }
+
+  % Começar os ingredientes
+  \begin{minipage}[t]{0.3\textwidth} %
+    \begin{Ingredientes}
+      \noindent
+      #3
+    \end{Ingredientes}
+  \end{minipage}%
+  \quad \begin{minipage}[t]{0.3\textwidth} %
+    \begin{Ingredientes}
+      \noindent
+      #4
+    \end{Ingredientes}
+  \end{minipage}%
+  \quad \begin{minipage}[t]{0.3\textwidth} %
+    \begin{Ingredientes}
+      \noindent
+      #5
+    \end{Ingredientes}
+  \end{minipage}
+  
+  \begin{minipage}[t]{\textwidth}
+    \noindent \begin{Preparo} #6    \end{Preparo}
+  \end{minipage}
+  \clearpage
+}
+
+% Para receitas com muitos ingredientes, que precisam de cuidados especiais
+\newcommand{\receitatrescols}[5]{
+  \vspace*{0.1cm}
+  \section{#1}
+  \begin{minipage}[t]{0.3\textwidth} %
+    \begin{Ingredientes}
+      \noindent
+      #2
+    \end{Ingredientes}
+  \end{minipage}%
+  \quad \begin{minipage}[t]{0.3\textwidth} %
+    \begin{Ingredientes}
+      \noindent
+      #3
+    \end{Ingredientes}
+  \end{minipage}%
+ \quad \begin{minipage}[t]{0.3\textwidth} %
+    \begin{Ingredientes}
+      \noindent
+      #4
+    \end{Ingredientes}
+  \end{minipage}
+  \vfill
+  
+  \begin{minipage}[t]{\textwidth}
+    \noindent \begin{Preparo} #5    \end{Preparo}
+  \end{minipage}
+  \clearpage
+}
+
+% Comando para incluir uma foto de receita sem ter que usar o includegraphics.
+% Útil no futuro caso eu queira padronizar alguma coisa
+\newcommand{\fotoreceita}[2]{
+  \condicionalFigura{
+  \begin{center}
+    \includegraphics[width=#1]{#2}
+  \end{center}
+  }
+}
+
+% Comando para facilitar colocar temperaturas
+\newcommand{\grau}{$^\circ$}

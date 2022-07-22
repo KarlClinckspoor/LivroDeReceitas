@@ -1,5 +1,5 @@
 from subprocess import run
-
+import os
 
 def clean_for_latex(text: str):
     bad_chars = ["_"]
@@ -14,4 +14,7 @@ def run_latexindent(text: str):
         fhand.write(text)
     command = ["latexindent", "--overwrite", "--silent", temp_filename]
     proc = run(command)
-    return open(temp_filename, "r", encoding="utf8").read()
+    cleaned = open(temp_filename, "r", encoding="utf8").read()
+    os.remove(temp_filename)
+    os.remove(temp_filename[:-4] + '.bak0')
+    return cleaned

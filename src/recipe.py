@@ -39,10 +39,14 @@ class Recipe:
             PreparationStep(i) for i in toml_dict.get(self.preparation_str)
         ]
         self.extras = ExtraNotes(toml_dict.get(self.extra_str), photo_path=self.header.photo_path)
+        self.latex_content: str | None = None
 
     def to_latex(
-        self, latex_template: Template | None = None, use_latexindent: bool = True
+        self, latex_template: Template | None = None, use_latexindent: bool = True, force: bool = False
     ):
+        if self.latex_content and not force:
+            return self.latex_content
+
         if not latex_template:
             latex_template = self.latex_template
         text = latex_template.substitute(
@@ -55,4 +59,5 @@ class Recipe:
         )
         if use_latexindent:
             text = run_latexindent(text)
-        return text
+        self.latex_content = text
+        return self.latex_content

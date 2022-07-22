@@ -3,7 +3,6 @@ from src.cleaner import clean_for_latex
 
 
 class Header:
-    # header
     name_str = "nome"
     approve_K_str = "karlAprova"
     approve_KK_str = "karenAprova"

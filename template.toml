@@ -1,0 +1,22 @@
+[cabecalho]
+nome =
+testado =
+karlAprova =
+karenAprova =
+label =
+foto =
+tipo =
+tags =
+
+[[ingredientes]]
+qtde =
+unidade =
+nome =
+obs =
+
+[[modoDePreparo]]
+descr =
+footnote =
+
+[NotasExtras]
+descr =

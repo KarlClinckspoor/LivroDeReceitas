@@ -1,0 +1,51 @@
+[cabecalho]
+nome = "Arroz padrão na panela de arroz"
+testado = true
+karlAprova = true
+karenAprova = true
+label = "rec:arroz_panela_arroz"
+foto = ""
+tipo = "salgado"
+tags = ["arroz", "tradicional", "simples"]
+
+[[ingredientes]]
+qtde = 1
+unidade = "copo"
+nome = "arroz"
+obs = "1 copo é o suficiente para 2"
+
+[[ingredientes]]
+qtde = 0.5
+unidade = "dente"
+nome = "alho"
+obs = "suficiente para 2"
+
+[[ingredientes]]
+qtde = 0.5
+unidade = " "
+nome = "cebola pequena"
+
+[[ingredientes]]
+qtde = 1
+unidade = "filme"
+nome = "óleo"
+obs = "suficiente para cobrir fundo da panela"
+
+[[ingredientes]]
+qtde = 2
+unidade = "copos"
+nome = "água quente"
+obs = "Para acelerar o cozimento"
+
+[[modoDePreparo]]
+descr = "Colocar alho e cebola finamente picados numa panela com óleo para dourar."
+footnote = "Idealmente, alho depois para diminuir chances de queimar"
+
+[[modoDePreparo]]
+descr = "Colocar o arroz e fritar um pouquinho. Transferir tudo para a panela de arroz. Colocar água"
+
+[[modoDePreparo]]
+descr = "Cozinhar por 13-15 minutos"
+
+[NotasExtras]
+descr = "O fundo da panela sempre fica grudado. Tentar achar uma maneira de fazer isso parar de acontecer"

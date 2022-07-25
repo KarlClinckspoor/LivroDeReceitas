@@ -1,0 +1,27 @@
+[cabecalho]
+nome = "Arroz arbório na panela de arroz"
+testado = true
+karlAprova = true
+karenAprova = true
+label = "rec:arroz_arborio_panela"
+foto = ""
+tipo = "salgado"
+tags = ["arroz", "carboidrato", "risoto"]
+
+[[ingredientes]]
+qtde = 1
+unidade = "volume"
+nome = "Arroz arbório"
+obs = "algum tipo de arroz para risoto"
+
+[[ingredientes]]
+qtde = 2
+unidade = "volume"
+nome = "Água"
+obs = "dobro da quantidade de água"
+
+[[modoDePreparo]]
+descr = "Colocar o arroz arbório na panela e colocar a água. Deixar cozinhar."
+
+[NotasExtras]
+descr ="O resultado é um arroz que parece arroz japonês. Fica bem fofinho, expandido, e contrasta bem com pratos mais fortes, como frango tailandês ou outros stir-frys."

@@ -1,0 +1,29 @@
+[cabecalho]
+nome = "Batata frita no airfryer"
+testado = true
+karlAprova = true
+karenAprova = true
+label = "rec:batata_frita_airfryer"
+tipo = "salgado"
+tags = ["simples", "congelado"]
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = "batata congelada"
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = "sal"
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = "óleo"
+
+[[modoDePreparo]]
+descr = "Colocar a batata congelada no airfryer, nas condições mostradas na embalagem. Pode tentar envolver as batatas em óleo, mas não é necessário."
+
+[[modoDePreparo]]
+descr = "Esperar, colocar sal a gosto e servir"

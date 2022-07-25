@@ -1,0 +1,65 @@
+[cabecalho]
+nome = "Batatas doces fritas no airfryer"
+testado = true
+karlAprova = true
+karenAprova = true
+label = 'rec:batata_doce_airfryer'
+foto = ""
+tipo = "salgado"
+tags = ["airfryer", "assado"]
+
+[[ingredientes]]
+qtde = 0.16
+unidade = "xícara"
+nome = "amido de milho"
+obs = "1/6"
+
+[[ingredientes]]
+qtde = 1
+unidade = "pitada"
+nome = "sal"
+
+[[ingredientes]]
+qtde = 1
+unidade = "colher de chá"
+nome = "bicarbonato de sódio"
+obs = "ou menos"
+
+[[ingredientes]]
+qtde = 400
+unidade = 'g'
+nome = "batata doce"
+obs = "A tradicional serve, mas não fica igual à receita"
+
+[[ingredientes]]
+qtde = 1
+unidade = "pouco"
+nome = 'óleo'
+
+[[modoDePreparo]]
+descr = "Descascar a batata doce e cortar em pedaços maiores que os de batata frita tradicional."
+[[modoDePreparo]]
+descr = "Bater o amido com a água com um fouet."
+[[modoDePreparo]]
+descr = "Ferver água numa panela maciça, colocar o sal e o bicarbonato e dissolver."
+[[modoDePreparo]]
+descr = "Colocar as batatas e esperar voltar a ferver. Quando estiver fervendo novamente, abaixar o fogo para o mínimo."
+[[modoDePreparo]]
+descr = "Aquecer o airfryer para 165 graus C."
+footnote="É a temperatura indicada na receita, mas eu não tenho certeza se é o ideal. Tentar aumentar isso para 180-200 graus C de primeira"
+[[modoDePreparo]]
+descr = "Cozinhar até o exterior ficar molinho, mas o interior firme, 3-5 minutos."
+[[modoDePreparo]]
+descr = "Mexer no amido novamente para resuspender, e transferir as batatas com uma colher furada para não ir muita água."
+[[modoDePreparo]]
+descr = "Mexer com um pegador apropriado, até recobrir totalmente as batatas com o amido."
+footnote="Não deixá-las por muito tempo aqui, pois é possível que elas continuem cozinhando por estarem quentes e fiquem bem moles"
+[[modoDePreparo]]
+descr = "Colocar um pouco de óleo no amido e remexer as batatas para recobri-las com o óleo para conseguir fritar."
+[[modoDePreparo]]
+descr = "Colocar as batatas na grade do airfryer quente e deixar cozinhando por 7 a 10 minutos."
+[[modoDePreparo]]
+descr = "Se não estiver bom, ou deixar mais tempo ou aumentar a temperatura, e ir acompanhando. Virar as batatas de vez em quando também auxilia no cozimento."
+
+[NotasExtras]
+descr = "Inspirado em https://www.cooksillustrated.com/recipes/7775-thick-cut-sweet-potato-fries"

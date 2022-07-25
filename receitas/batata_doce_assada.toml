@@ -1,0 +1,39 @@
+[cabecalho]
+nome = "Batata doce assada"
+testado = true
+karlAprova = true
+karenAprova = true
+label = "rec:batata_doce_assada"
+tipo = "salgado"
+tags = ['assado']
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = "batata doce"
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = "azeite"
+obs = "suficiente para cobrir as batatas"
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = "sal"
+
+[[modoDePreparo]]
+descr = "Descascar as batatas e cortar em moedas."
+[[modoDePreparo]]
+descr = "Temperar com óleo e sal."
+[[modoDePreparo]]
+descr = "Colocar em uma assadeira e cobrir com papel alumínio."
+[[modoDePreparo]]
+descr = "Colocar no forno ainda frio. Ligar a uma temperatura baixa (180 graus C se possível)"
+[[modoDePreparo]]
+descr = "Depois de 30-40 minutos, checar se o lado de baixo está bom. Tomar cuidado antes de checar se está bom, para não rasgar o papel. Preste atenção que ela pode parecer crua por cima, mas queimada por baixo."
+[[modoDePreparo]]
+descr = "Quando estiver bom, virar, deixar por menos tempo que antes, pois já está quente."
+
+

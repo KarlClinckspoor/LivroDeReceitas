@@ -1,0 +1,65 @@
+[cabecalho]
+nome = "Arroz na panela"
+testado = true
+karlAprova = true
+karenAprova = true
+label = "rec:arroz_na_panela"
+tipo = "salgado"
+tags = ["arroz", "brasileira", "tradicional"]
+
+[[ingredientes]]
+qtde = 0.75
+unidade = "copo"
+nome = "arroz"
+obs = "1 medida é suficiente para 1 pessoa com tranquilidade"
+
+[[ingredientes]]
+qtde = 0.5
+unidade = " "
+nome = "cebola grande"
+
+[[ingredientes]]
+qtde = 1
+unidade = "dente"
+nome = "alho"
+obs = "1 ponta de faca"
+
+[[ingredientes]]
+qtde = 2
+unidade = "pitadas"
+nome = "arroz"
+obs = "1 medida é suficiente para 1 pessoa com tranquilidade"
+
+[[modoDePreparo]]
+descr="Lavar o arroz na peneira bastante para tirar muito do pó branco. Espalhar o arroz para ajudar a secar. Fazer isso com antecedência para que o arroz esteja relativamente seco antes de colocar na panela."
+
+[[modoDePreparo]]
+descr="Cortar a cebola em pedaços pequenos, manualmente ou no processador"
+
+[[modoDePreparo]]
+descr="Aquecer a panela e colocar o óleo, um fio. Fogo alto."
+
+[[modoDePreparo]]
+descr="Fritar a cebola até ela ficar um tanto douradinha."
+
+[[modoDePreparo]]
+descr="Colocar o alho até soltar o aroma"
+
+[[modoDePreparo]]
+descr="Colocar o sal"
+
+[[modoDePreparo]]
+descr="Colocar o arroz e fritar um pouquinho."
+
+[[modoDePreparo]]
+descr="Cobrir o arroz com 1 falange de água filtrada"
+footnote = "Inspirado no método do arroz japonês"
+
+[[modoDePreparo]]
+descr="Esperar o arroz ferver em fogo alto e o nível da água atingir o nível do arroz."
+
+[[modoDePreparo]]
+descr="Abaixar o fogo para o mínimo e cobrir com uma tampa."
+
+[[modoDePreparo]]
+descr="Em torno de 10-12 minutos o arroz deve estar pronto. Resistir remover a tampa."

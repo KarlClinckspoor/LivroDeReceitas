@@ -5,7 +5,7 @@ karlAprova = true
 karenAprova = true
 label = "rec:arroz_japones"
 foto = ""
-tipo = "salgada"
+tipo = "salgado"
 tags = ["arroz", "japonesa", "simples", "almoço", "janta"]
 
 [[ingredientes]]
@@ -13,12 +13,6 @@ qtde = 0.75
 unidade = "xícara"
 nome = "arroz japonês"
 obs = "(1 medida de copo de arroz). A receita é bastante flexível, pode usar mais"
-
-[[ingredientes]]
-qtde = 1
-unidade = "unidade"
-nome = "alho"
-obs = "Testando"
 
 [[modoDePreparo]]
 descr = "Colocar o arroz na panela de cozimento, enxaguar 3 vezes com água da torneira para tirar a farinha de arroz."
@@ -46,4 +40,4 @@ descr = """18:08: Arroz lavado foi colocado na boca menor do fogão. 3 medidas d
 
 18:20: Nível da água atingiu o nível do arroz
 
-18:21: Cozimento terminado"""
+18:31: Cozimento terminado"""

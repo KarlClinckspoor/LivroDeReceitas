@@ -10,7 +10,7 @@ class Ingredient:
     observation_str = "obs"
     name_str = "nome"
 
-    latex_template = Template(r"\item $quantity $unit de $name. (\emph{$obs})")
+    latex_template = Template(r"\item $quantity $unit de $name.\emph{$obs}")
 
     def __init__(self, ingredient: dict[str, str]):
         self.name: str = ingredient.get(self.name_str, "")
@@ -25,6 +25,8 @@ class Ingredient:
         self.observation: str = clean_for_latex(
             ingredient.get(self.observation_str, "")
         )
+        if (len(self.observation) > 0) and (self.observation[0] != '(') and (self.observation[1] != '('):
+            self.observation = ' (' + self.observation + ')'
 
         if self.name == "":
             raise Warning("Ingredient added without name! Will appear blank")

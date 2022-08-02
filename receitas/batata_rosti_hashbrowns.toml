@@ -1,0 +1,59 @@
+[cabecalho]
+nome = "Batata rosti/Hashbrowns"
+testado = true
+karlAprova = false
+karenAprova = true
+label = "rec:hashbrowns"
+tipo = "salgado"
+tags = ['batata']
+
+[[ingredientes]]
+qtde = 300
+unidade = 'g'
+nome = "batata"
+
+[[ingredientes]]
+qtde = 1
+unidade = "pouco"
+nome = "manteiga"
+obs = "para untar"
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = "sal"
+obs = "a gosto"
+
+[[ingredientes]]
+qtde = 3
+unidade = "fatias"
+nome = "queijo"
+obs = "Qtde aprox. Para servir de recheio."
+
+[[modoDePreparo]]
+descr = "Descascar e ralar a batata"
+
+[[modoDePreparo]]
+descr = "Espremer bastante para tirar o máximo de líquido possível"
+
+[[modoDePreparo]]
+descr = "Colocar sal e misturar bem"
+footnote = "4-5 viradas de moedor"
+
+[[modoDePreparo]]
+descr = "Untar a frigideira com manteiga e colocar metade da batata. 1 cm de batata +- é o ideal"
+
+[[modoDePreparo]]
+descr = "Colocar as fatias de queijo generosamente"
+
+[[modoDePreparo]]
+descr = "Recobrir com metade da batata"
+
+[[modoDePreparo]]
+descr = "Deixar no início em fogo alto, depois passar de médio para baixo. Observar o fundo depois de 10 minutos porque irá começar a levantar um pouco. Quando dourar, virar, usando uma tampa de panela ou prato"
+
+[[modoDePreparo]]
+descr = "Deixar mais uns 10 minutos do outro lado, ou até dourar"
+
+[[modoDePreparo]]
+descr = "Servir imediatamente"

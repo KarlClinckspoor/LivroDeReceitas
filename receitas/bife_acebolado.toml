@@ -1,0 +1,72 @@
+[cabecalho]
+nome = "Bife acebolado"
+testado = true
+karlAprova = true
+karenAprova = true
+label = 'rec:bife_acebolado'
+tipo = "salgado"
+tags = ['carne', 'simples']
+
+[[ingredientes]]
+qtde = 3
+unidade = "bifes"
+nome = "contra-filé ou alcatra ou similar"
+obs = "peito de frango também é aceitável"
+
+[[ingredientes]]
+qtde = 0.25
+unidade = "unidade"
+nome = "cebola"
+obs = "para 1 bife pequeno. Ajuste a gosto"
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = "sal"
+obs = "a gosto"
+
+[[ingredientes]]
+qtde = 1
+unidade = "dente"
+nome = "alho"
+obs = 'triturado'
+
+[[ingredientes]]
+qtde = 1
+unidade = "fio"
+nome = "óleo"
+obs = 'de alta temperatura, como girassol, soja, não azeite'
+
+[[modoDePreparo]]
+descr = "Cortar a cebola em rodelas"
+
+[[modoDePreparo]]
+descr = "Cobrir os bifes com alho triturado e sal. Deixar mais tempo para ganhar gosto se quiser"
+
+[[modoDePreparo]]
+descr = "Colocar um fio de óleo na frigideira e deixar aquecer em fogo alto"
+
+[[modoDePreparo]]
+descr = "Colocar as cebolas e deixar por +- 5 minutos, virando de vez em quando para não queimar"
+
+[[modoDePreparo]]
+descr = "Colocar o bife na frigideira, fazendo um espaço na cebola"
+footnote = "Se o bife estiver congelado, pode colocar um pouco antes para que ele descongele. Mas o ideal é ele estar fresco"
+
+[[modoDePreparo]]
+descr = "Deixar a carne por um bom tempo de um lado, para selá-la. Mover o bife no prato para pegar um pouco do sabor das áreas com cebola"
+
+[[modoDePreparo]]
+descr = "Virar o bife quando um dos lados estiver terminado e dourado. Continuar virando as cebolas"
+
+[[modoDePreparo]]
+descr = "Quando a temperatura interna atingir o valor apropriado, a carne está pronta."
+
+[[modoDePreparo]]
+descr = "Se a cebola estiver muito cozida, para evitar queimar, ela pode ser colocada sobre a carne, para manter a temperatura"
+
+[[modoDePreparo]]
+descr = "Um filete de água pode ser colocado na frigideira para fazer a deglaçagem e melhorar o gosto e cor do bife. Deixe secar"
+
+[[modoDePreparo]]
+descr = "Mais um pouco de óleo pode ser colocado durante a fritura, caso o som esteja esquisito"

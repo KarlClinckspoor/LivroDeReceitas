@@ -1,0 +1,46 @@
+[cabecalho]
+nome = "Bife com curry"
+testado = true
+karlAprova = true
+karenAprova = false
+label = 'rec:bife_com_curry'
+tipo = "salgado"
+tags = ['carne', 'temperado']
+
+[[ingredientes]]
+qtde = 1
+unidade = "bife"
+nome = "carne"
+obs = "cortado em tiras"
+
+[[ingredientes]]
+qtde = 1
+unidade = "dente"
+nome = "alho"
+obs = 'bem picado'
+
+[[ingredientes]]
+qtde = 0.5
+unidade = "unidade"
+nome = "cebola"
+obs = 'bem picada'
+
+[[ingredientes]]
+qtde = 1
+unidade = "fio"
+nome = "óleo"
+obs = "ou manteiga"
+
+[[ingredientes]]
+qtde = 1
+unidade = "colher de sopa"
+nome = "curry em pó"
+
+[[modoDePreparo]]
+descr = "Fritar a cebola e alho no óleo, depois colocar a carne e refogar por uns minutos"
+
+[[modoDePreparo]]
+descr = "Quando soltar um pouco de líquido, colocar o curry em pó. Caso não solte, coloque uma tampa e abaixe o fogo. Em última hipótese coloque meio copo de água quente"
+
+[[modoDePreparo]]
+descr = "Servir com arroz"

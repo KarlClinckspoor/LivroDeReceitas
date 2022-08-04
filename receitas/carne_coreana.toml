@@ -1,0 +1,80 @@
+[cabecalho]
+nome = "Carne coreana"
+testado = true
+karlAprova = true
+karenAprova = true
+label = "sec:carne_coreana"
+tipo = "salgado"
+tags = ["asiático", "carne"]
+
+[[ingredientes]]
+qtde = 500
+unidade = 'g'
+nome = 'carne'
+obs = "filé mignon ou contra-filé"
+
+[[ingredientes]]
+qtde = 0.5
+unidade = "unidade"
+nome = "cebola"
+
+[[ingredientes]]
+qtde = 0.5
+unidade = "unidade"
+nome = "cebola grande"
+
+[[ingredientes]]
+qtde = 1
+unidade = "unidade"
+nome = "alho poró"
+
+[[ingredientes]]
+qtde = 1
+unidade = "colher de sopa"
+nome = "óleo de gergelim"
+
+[[ingredientes]]
+qtde = 2
+unidade = "colheres de sopa"
+nome = "shoyu"
+
+[[ingredientes]]
+qtde = 1
+unidade = "colher de sopa"
+nome = "açúcar mascavo"
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = "pimenta do reino"
+
+[[ingredientes]]
+qtde = 2
+unidade = "dentes"
+nome = "alho"
+obs = "espremidos, ou pré-picados"
+
+[[modoDePreparo]]
+descr = "Cortar a carne em tiras ou cubos"
+footnote = "pode tirar a gordura"
+
+[[modoDePreparo]]
+descr = "Cortar a cebola em pétalas (transversalmente)"
+
+[[modoDePreparo]]
+descr = "cortar a cenoura em fatias ou tiras"
+
+[[modoDePreparo]]
+descr = "Cortar a parte branca do alho poró em tiras"
+
+[[modoDePreparo]]
+descr = "Marinar a carne e os vegetais por 1 h em todos os ingredientes. Deixar bem misturado numa travessa fechada"
+
+[[modoDePreparo]]
+descr = "Colocar óleo no wok e colocar em fogo alto até começar um pouco de fulgor"
+
+[[modoDePreparo]]
+descr = "Colocar a carne e os vegetais no wok quente e selar a carne, virando várias vezes. Idealmente não irá sair muito caldo"
+
+[[modoDePreparo]]
+descr = "Servir com arroz japonês"

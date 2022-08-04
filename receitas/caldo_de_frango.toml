@@ -1,0 +1,65 @@
+[cabecalho]
+nome = "Caldo de frango"
+testado = true
+karlAprova = true
+karenAprova = true
+label = "sec:caldo_de_frango"
+tipo = "salgado"
+tags = ["caldo", "frango"]
+
+[[ingredientes]]
+qtde = 3
+unidade = "dentes"
+nome = "alho"
+obs = "picado bem pequeno"
+
+[[ingredientes]]
+qtde = 1
+unidade = "unidade"
+nome = "cebola pequena"
+obs = "picada bem pequena"
+
+[[ingredientes]]
+qtde = 2
+unidade = "unidades"
+nome = "coxa de frango"
+
+[[ingredientes]]
+qtde = 2
+unidade = "unidades"
+nome = "sobrecoxa de frango"
+
+[[ingredientes]]
+qtde = 2
+unidade = "unidades"
+nome = "meio-peitos de frango"
+obs = "opcional"
+
+[[ingredientes]]
+qtde = 1
+unidade = "fio"
+nome = "óleo"
+
+[[ingredientes]]
+qtde = 1
+unidade = "colher de chá"
+nome = "sal"
+
+[[modoDePreparo]]
+descr = "Colocar alho e cebola para dourar um pouco, junto com o sal"
+
+[[modoDePreparo]]
+descr = "Colocar o frango, sem tirar a pele ou qualquer outra coisa"
+
+[[modoDePreparo]]
+descr = "Colocar a água, cerca de 2 litros, até cobrir tudo. Deixar em fogo alto até ferver, depois abaixar"
+
+[[modoDePreparo]]
+descr = "Deixar fervendo por +- 1h e ir mexendo de vez em quando para ajudar a cozinhar. Quando a carne sair dos ossos, está pronto"
+footnote = "Os peitos podem ficar duros, então pode remover antes dos outros"
+
+[[modoDePreparo]]
+descr = "Coar tudo por uma peneira. Reservar o frango para fazer uma torta ou algo do tipo."
+
+[NotasExtras]
+descr = "Se a panela for pequena, é possível que não dê 2L de água. O caldo ficará super escuro e forte. Nesse caso, remover o caldo que tem e colocar mais água, e ferver mais. Misturar o novo caldo com o antigo. O volume final deverá dar +- 2L."

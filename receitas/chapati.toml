@@ -1,0 +1,47 @@
+[cabecalho]
+nome = "Chapati"
+testado = true
+karlAprova = true
+karenAprova = true
+label = 'sec:chapati'
+tipo = 'salgado'
+tags = ['pão', 'indiano']
+
+[[ingredientes]]
+qtde = 200
+unidade = 'g'
+nome = 'farinha de trigo'
+
+[[ingredientes]]
+qtde = 0.5
+unidade = 'colher de chá'
+nome = 'sal'
+
+[[ingredientes]]
+qtde = 1
+unidade = "colher de chá"
+nome = 'azeite'
+
+[[ingredientes]]
+qtde = 160
+unidade = 'mL'
+nome = 'água'
+obs = 'vai depender do ponto da farinha'
+
+[[modoDePreparo]]
+descr = "Misturar bem a farinha, sal e azeite. Colocar a água aos poucos até atingir o ponto da massa."
+
+[[modoDePreparo]]
+descr = "Sovar por 15-30 minutos"
+
+[[modoDePreparo]]
+descr = "Deixar descansar por 15-30 minutos, coberto"
+
+[[modoDePreparo]]
+descr = 'Tirar porções de 30 g, abrir com um rolo. Deixar tudo coberto com um pano para não secar'
+
+[[modoDePreparo]]
+descr = "Colocar na frigideira quente, no fogo médio/alto. Ficar 30 segundos de cada lado"
+
+[[modoDePreparo]]
+descr = "Para terminar o assamento, colocar diretamente sobre a chama do fogão por alguns segundos. Quando terminar de formar bolhas, virar e deixar até inchar."

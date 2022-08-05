@@ -1,0 +1,75 @@
+[cabecalho]
+nome = "Espaguete a carbonara"
+testado = true
+karlAprova = true
+karenAprova = false
+label = 'rec:espaguete_carbonara'
+tipo = 'salgado'
+tags = ['massa', 'italiano']
+
+[[ingredientes]]
+qtde = 80
+unidade = 'g'
+nome = 'macarrão espaguete'
+obs = 'grau 3 é OK'
+
+[[ingredientes]]
+qtde = 3
+unidade = 'tiras'
+nome = 'bacon'
+
+[[ingredientes]]
+qtde = 20
+unidade = 'g'
+nome = 'Pecorino'
+obs = 'ou Parmesão'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'unidade'
+nome = 'ovo'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'tanto'
+nome = 'pimenta do reino'
+
+[[modoDePreparo]]
+descr = "Colocar água para esquentar com uma pitada de sal"
+
+[[modoDePreparo]]
+descr = "Picar o bacon"
+
+[[modoDePreparo]]
+descr = "numa tigela, bater o ovo e queijo com um garfo"
+
+[[modoDePreparo]]
+descr = 'Quando a água estiver fervendo, colocar macarrão'
+
+[[modoDePreparo]]
+descr = "Após +- 2 minutos, começar a fritar o bacon na frigideira"
+
+[[modoDePreparo]]
+descr = "Remover o excesso de gordura quando o bacon ficar pronto"
+
+[[modoDePreparo]]
+descr = "Quando o macarrão estiver cozido, transferir diretamente para a panela com bacon e fogo desligado. Não jogar água do macarrão fora."
+
+[[modoDePreparo]]
+descr = "Pegar uma xícara de água fervente (do macarrão) na mão esquerda e um fouet na mão direita. Bater o ovo e o queijo a medida que coloca um fio de água quente lentamente. Colocar no macarrão depois de ficar cremoso."
+obs = "Isto é bem difícil. Ver e"
+
+[[modoDePreparo]]
+descr = "Alternativa:"
+
+[[modoDePreparo]]
+descr = "Fritar o bacon, misturar ele frio no ovo e queijo"
+
+[[modoDePreparo]]
+descr = "Cozinhar macarrão na maneira normal. Colocar 1/2 xícara de água do macarrão com a mistura de ovo+queijo+bacon e mexer com o fouet. Colocar no microondas de 10 em 10 segundos até ficar cremoso. Checar temperatura para garantir cozimento"
+
+[[modoDePreparo]]
+descr = "Servir imediatamente"
+
+[NotasExtras]
+descr = "Se for fazer para a Karen, ela gosta que fique engrumado. Aí é bem fácil. Só aquecer a frigideira depois de misturar até engrumar."

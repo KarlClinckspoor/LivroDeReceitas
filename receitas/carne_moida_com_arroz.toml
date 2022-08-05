@@ -1,0 +1,64 @@
+[cabecalho]
+nome = "Carne moída com azeitona e arroz"
+testado = true
+karlAprova = true
+karenAprova = true
+label = "sec:carne_moida_com_arroz"
+tipo = "salgado"
+tags = ['brasileira', 'simples', 'comfort']
+
+[[ingredientes]]
+qtde = 300
+unidade = 'g'
+nome ='patinho moído'
+
+[[ingredientes]]
+qtde = 0.5
+unidade = 'unidade'
+nome = 'cebola grande'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'dente'
+nome = 'alho'
+obs = 'picado'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'tanto'
+nome = 'sal'
+obs = 'a gosto'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'tanto'
+nome = 'azeitonas'
+obs = 'a gosto, sem caroço'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'tanto'
+nome = 'páprica defumada'
+obs = 'opcional'
+
+[[modoDePreparo]]
+descr = "Cortar a cebola em pedaços relativamente pequenos"
+footnote = "não passar no processador"
+
+[[modoDePreparo]]
+descr = "Aquecer a frigideira em fogo alto, com um fio de óleo, e começar a fritar a cebola"
+
+[[modoDePreparo]]
+descr = "Depois de dourar as cebolas, colocar o alho, deixar um minuto +- para aromatizar, depois colocar a carne"
+
+[[modoDePreparo]]
+descr = "Virar a carne com frequência para tentar evitar que ela perca toda a água. Tentar remover grumos com a espátula"
+
+[[modoDePreparo]]
+descr = "Depois de cozida, colocar as azeitonas"
+
+[[modoDePreparo]]
+descr = "Misturar bem e ajustar o sal a gosto. Colocar um pouco de paprica a gosto."
+
+[[modoDePreparo]]
+descr = "Servir com arroz"

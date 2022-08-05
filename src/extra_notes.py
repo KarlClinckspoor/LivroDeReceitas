@@ -8,7 +8,7 @@ class ExtraNotes:
     latex_template = Template(
         r"$photo" r"\begin{itshape}" "\n" r"$text" "\n" r"\end{itshape}"
     )
-    photo_template = Template(r"\fotoreceita{0.7\textwidth}{$path$}")
+    photo_template = Template(r"\fotoreceita{0.7\textwidth}{$path}")
 
     def __init__(self, extra_notes: dict[str, str] | None, photo_path: str = ""):
         if extra_notes:

@@ -1,0 +1,86 @@
+[cabecalho]
+nome = "Conchiglioni de queijo"
+testado = true
+karlAprova = true
+karenAprova = true
+label = 'rec:conchiglioni_de_queijo'
+#foto = './Fotos/conchiglioni'
+tipo = 'salgado'
+tags = ['massa', 'italiano', 'comfort', 'congelável']
+
+[[ingredientes]]
+qtde = 50
+unidade = 'unidades'
+nome = "conchiglioni"
+obs = 'aproximadamente 1 pacote'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'cilindro'
+nome = 'ricota fresca'
+obs = 'Mais molinha é melhor. Isso dá cerca de 200 g'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'pote'
+nome = 'creme de ricota'
+
+[[ingredientes]]
+qtde = 100
+unidade = 'g'
+nome = 'mussarella ralada'
+
+[[ingredientes]]
+qtde = 100
+unidade = 'g'
+nome = 'provolone ralado'
+
+[[ingredientes]]
+qtde = 25
+unidade = 'g'
+nome = 'parmesão ralado'
+obs = 'lembrar de guardar um pouco para polvilhar em cima depois'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'sachê'
+nome = 'molho de tomate'
+obs = 'usar 2 para banhar bem se quiser'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'tanto'
+nome = 'sal'
+
+[[ingredientes]]
+qtde = 8
+unidade = 'unidades'
+nome = 'nozes'
+obs = 'picadas'
+
+[[modoDePreparo]]
+descr = 'Cozinhar os conchiglioni em água com sal até ficarem no ponto'
+
+[[modoDePreparo]]
+descr = "Enquanto conchiclioni cozinham, misturar todos os queijos juntos com as nozes. Provar a mistura e ajustar com os quejos, ou mais sal. De forma geral, não foi necessário colocar sal"
+
+[[modoDePreparo]]
+descr = "Coar o macarrão, deixar esfriar um pouco e colocar o forno a aquecer a 200 graus C"
+
+[[modoDePreparo]]
+descr = "Numa travessa grande de vidro, cobrir a base com molho de tomate para evitar que o macarrão queime durante o assamento"
+
+[[modoDePreparo]]
+descr = "Preencher generosamente os conchiglioni com recheio. Colocar na travessa da maneira mais eficiente possível, porque 50 é bastante. Se sobrar, colocar em outra travessa ou em outra fornada"
+
+[[modoDePreparo]]
+descr = "Jogar molho por cima, tentando ser homogêneo. Salpicar parmesão a gosto"
+
+[[modoDePreparo]]
+descr = "Colocar no forno por 15 minutos. Tomar cuidado para não queimar se tiver mais de uma travessa. O objetivo é derreter o queijo, pois tudo já está tecnicamente pronta para ser comida."
+
+[[modoDePreparo]]
+descr = "Servir imediatamente."
+
+[NotasExtras]
+descr = "O que sobrar pode ser resfriado ou congelado por um longo tempo e aquecido no microondas. Não há perda significativa de sabor."

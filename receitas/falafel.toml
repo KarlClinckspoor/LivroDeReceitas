@@ -1,0 +1,138 @@
+[cabecalho]
+nome = "Falafel"
+testado = true
+karlAprova = true
+karenAprova = true
+label = 'rec:falafel'
+tipo = 'salgado'
+tags = ['árabe', 'frito']
+
+[[ingredientes]]
+qtde = 225
+unidade = 'g'
+nome = 'Grão de bico seco'
+obs = '--falafel--'
+
+[[ingredientes]]
+qtde = 0.5
+unidade = 'unidade'
+nome = 'cebola'
+
+[[ingredientes]]
+qtde = 2
+unidade ='dentes'
+nome = 'alho picado'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'colher de chá'
+nome = 'sal'
+
+[[ingredientes]]
+qtde = 0.25
+unidade = 'colher de chá'
+nome = 'pimenta caiena'
+
+[[ingredientes]]
+qtde = 1.5
+unidade = 'colher de chá'
+nome = 'semente de coentro em pó'
+obs = 'opcional'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'colher de chá'
+nome = 'cominho'
+obs = 'opcional'
+
+[[ingredientes]]
+qtde = 0.75
+unidade = 'xícara'
+nome = 'coentro'
+obs = 'opcional'
+
+[[ingredientes]]
+qtde = 0.75
+unidade = 'xícara'
+nome = 'salsinha'
+obs = 'opcional'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'tanto'
+nome = 'óleo para fritura'
+
+[[ingredientes]]
+qtde = 0.3
+unidade = 'xícara'
+nome = 'tahine'
+obs = '--molho de tahine--'
+
+[[ingredientes]]
+qtde = 0.3
+unidade = 'xícara'
+nome = 'iogurte grego'
+
+[[ingredientes]]
+qtde = 0.25
+unidade = 'xícara'
+nome = 'suco de limão'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'tanto'
+nome = 'sal'
+
+[[ingredientes]]
+qtde = 0.25
+unidade = 'xícara'
+nome = 'farinha'
+obs = '--liga de farinha--'
+
+[[ingredientes]]
+qtde = 0.3
+unidade = 'xícara'
+nome = 'água'
+
+[[ingredientes]]
+qtde = 2
+unidade = 'colheres de chá'
+nome = 'fermento químico'
+
+[[modoDePreparo]]
+descr = '(Na noite anterior) colocar o grão de bico submerso em 2-3 polegadas de água durante a noite.'
+
+[[modoDePreparo]]
+descr = 'Misturar o tahine, iogurte grego e suco de limão. Diluir com água caso estiver muito grosso.'
+
+[[modoDePreparo]]
+descr = "Colocar os temperos do falafel num processador e bater até formar uma pasta"
+
+[[modoDePreparo]]
+descr = "Adicionar o grão de bico e bater. Não é para formar uma pasta, mas sim ficar com alguns pedaços grandes, como uma aveia."
+footnote = 'Tomar cuidado se tiver material demais. Separar em duas metades de depois juntá-las, misturando bem.'
+
+[[modoDePreparo]]
+descr = 'Misturar a farinha e água numa tigela. Levar ao microondas e aquecer 10 minutos. Remover, mexer, até homogeneizar. Repetir isso até formar uma pasta que sustena pequenos picos. Colocar o fermento e misturar novamente.'
+
+[[modoDePreparo]]
+descr = "Misturar a liga de farinha ao falavel até desaparecer"
+
+[[modoDePreparo]]
+descr = "Pegar algumas superfícies e fazer bolinhas ou discos de falafel. Tentar manter os tamanhos consistentes para a fritura ser consistente também."
+footnote = 'Eu tive um pouco de sucesso utilizando duas colheres e rolando com as mãos'
+
+[[modoDePreparo]]
+descr = 'Aquecer o óleo a 320 graus F. É importante deixar a temperatura nesta faixa, não aquecer nem resfriar demais.'
+
+[[modoDePreparo]]
+descr = "Colocar as bolinhas de falafel com cuidado, utilizando uma colher furada. Mexer neles de vez em quando para impedir que grudem um no outro, nas paredes ou na base na panela."
+
+[[modoDePreparo]]
+descr = 'Quando estiverem próximos ao ponto, irão flutuar até o topo. Retirar quando o exterior estiver bastante dourado/marrom. Abrir e provar um para garantir que estão bem cozidos.'
+
+[[modoDePreparo]]
+descr = "Colocar o falafel pronto sobre papel toalha"
+
+[NotasExtras]
+descr = "Para requentar, 5 minutos a 200 graus C no airfryer é uma boa medida.\n\nVídeo: https://www.youtube.com/watch?v=2l9TyNV64Zo"

@@ -1,0 +1,90 @@
+[cabecalho]
+nome = 'Fake chinese food'
+label = "sec:fake_chinese_food"
+tipo = "salgado"
+tags = ["chinesa", "asiática"]
+
+[[ingredientes]]
+qtde = 1
+unidade = "peito"
+nome = "de frango"
+
+[[ingredientes]]
+qtde = 0.75
+unidade = "unidade"
+nome ="pimentão vermelho ou verde"
+obs = "comprido"
+
+[[ingredientes]]
+qtde = 0.74
+unidade = "unidade"
+nome = 'cebola pequena'
+obs = "ou 1/2 cebola grande"
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = 'vinagre branco'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'colher de sopa'
+nome = 'açúcar mascavo'
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = 'Shoyu'
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = 'ketchup'
+
+[[ingredientes]]
+qtde = 1.5
+unidade = 'dentes'
+nome = 'alho'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'colher de sopa'
+nome = 'maizena'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'fio'
+nome = 'óleo de gergelim'
+
+[[ingredientes]]
+qtde = 2
+unidade = 'punhados'
+nome = 'amendoim'
+
+[[modoDePreparo]]
+descr = "Cortar o frango em tiras pequenas, ou cubos"
+
+[[modoDePreparo]]
+descr = "Marinar o frango em shoyu, vinagre branco e açúcar mascavo"
+footnote = "Este molho será o precursor para o molho final"
+
+[[modoDePreparo]]
+descr = "Dissolver a maizena em meio copo de água"
+
+[[modoDePreparo]]
+descr = "Misturar os ingredientes do molho (todos após o vinagre branco) no molho do frango"
+
+[[modoDePreparo]]
+descr = "Fritar o frango em temperatura elevada"
+
+[[modoDePreparo]]
+descr = "Fritar os legumes"
+
+[[modoDePreparo]]
+descr = "Acrescentar o molho e depois a maizena"
+
+[[modoDePreparo]]
+descr = "Servir com arroz japonês"
+
+[NotasExtras]
+descr = "Colocar bem pouco de vinagre se a Karen for comer, é muito ácido"

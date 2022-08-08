@@ -12,6 +12,8 @@ class PreparationStep:
         self._preparation = preparation
         self.description = clean_for_latex(preparation.get(self.description_str, ""))
         self.footnote = clean_for_latex(preparation.get(self.footnote_str, ""))
+        if self.footnote:
+            self.footnote = r'\footnote{' + self.footnote + '}'
 
         if self.description == "":
             raise Warning("Preparation step is missing a description!")

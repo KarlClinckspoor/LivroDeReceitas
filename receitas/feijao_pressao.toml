@@ -1,0 +1,69 @@
+[cabecalho]
+nome = "Feijão na panela de pressão"
+testado = true
+karlAprova = true
+karenAprova = true
+label = 'rec:feijao_panela_pressao'
+tipo = 'salgado'
+tags = ['feijão', 'pressão', 'tradicional']
+
+[[ingredientes]]
+qtde = 200
+unidade = 'g'
+nome = 'feijão'
+obs = 'carioca ou preto, aproximadamente 2 xícaras'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'unidade'
+nome = 'cebola média'
+
+[[ingredientes]]
+qtde = 2
+unidade = 'dentes'
+nome = 'alho'
+
+[[ingredientes]]
+qtde = 2
+unidade = 'folhas'
+nome = 'louro'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'tanto'
+nome = 'sal'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'bocado'
+nome = 'linguiça calabresa'
+obs = 'ou bacon'
+
+[[modoDePreparo]]
+descr = 'Para o remolho, no dia anterior, deixar de molho numa tigela com bastante água. Deixar por 12h de molho. Trocar de água uma vez durante esse período'
+
+[[modoDePreparo]]
+descr = "Escorrer o feijão, colocar na panela de pressão e cobrir de água até passar o mínimo, ou recobrir com folga o feijão. Não passar do limite máximo. Colocar as folhas de louro."
+
+[[modoDePreparo]]
+descr = "Tampar a panela, deixar ferver, abaixar o fogo quando começar a apitar."
+footnote = "A recomendação é deixar em fogo médio enquanto aquece, mas não tive essa impressão."
+
+[[modoDePreparo]]
+descr = "Deixar cozinhar por 10 minutos na pressão"
+footnote = "Na pressão equivale a 'enquanto apitar'"
+
+[[modoDePreparo]]
+descr = "Desligar o fogo e tirar a pressão com cuidado. Isso pode ser levantando o apito com um garfo, mas isso pode causar muita sujeira, como também colocando na pia sob fluxo de água, e depois de uns segundos levantar o apito. Pode também deixar esfriar sozinho, sem tocar, se não tiver pressa"
+
+[[modoDePreparo]]
+descr = "Abrir a panela e provar um feijão para ver se está mole"
+
+[[modoDePreparo]]
+descr = "Para temperar, numa panela menor, fritar o alho, cebola, e outros adicionais, depois colocar 1 concha de feijão. Amassar o feijão com a base da concha para criar o caldo. Colocar água se precisar."
+
+[[modoDePreparo]]
+descr = "Transferir mais feijão e deixar cozinhar bem para incorporar o sabor. Provar o sabor e colocar sal a gosto"
+
+[NotasExtras]
+descr = "O feijão não temperado ou temperado podem ser congelados e comidos por até alguns meses. Ideia do remolho vem de: https://www.youtube.com/watch?v=_pDkWlAWZ9M"

@@ -1,0 +1,61 @@
+[cabecalho]
+nome = "Feijão na panela"
+testado = true
+karlAprova = true
+karenAprova = true
+label = 'rec:feijao_panela_pressao'
+tipo = 'salgado'
+tags = ['feijão', 'pressão', 'tradicional']
+
+[[ingredientes]]
+qtde = 150
+unidade = 'g'
+nome = 'feijão'
+obs = 'carioca ou preto, aproximadamente 2 xícaras'
+
+[[ingredientes]]
+qtde = 0.5
+unidade = 'unidade'
+nome = 'cebola média'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'dente'
+nome = 'alho'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'folhas'
+nome = 'louro'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'tanto'
+nome = 'sal'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'bocado'
+nome = 'linguiça calabresa'
+obs = 'ou bacon'
+
+[[modoDePreparo]]
+descr = 'Para o remolho, no dia anterior, deixar de molho numa tigela com bastante água. Deixar por 12h de molho. Trocar de água uma vez durante esse período'
+
+[[modoDePreparo]]
+descr = "Fritar a cebola e alho no bacon ou óleo. Colocar o feijão e a folha de louro"
+
+[[modoDePreparo]]
+descr = "Cobrir com água e ajustar o sal."
+
+[[modoDePreparo]]
+descr = "Cozinhar por 40-60 minutos, checando de 15 em 15"
+
+[[modoDePreparo]]
+descr = "Amassar um pouco do feijão e reduzir bem o líquido, para fazer o caldo"
+
+[[modoDePreparo]]
+descr = "Servir com arroz"
+
+[NotasExtras]
+descr = "O feijão não temperado ou temperado podem ser congelados e comidos por até alguns meses. Ideia do remolho vem de: https://www.youtube.com/watch?v=_pDkWlAWZ9M. É bem difícil de fazer por este método, bem cansativo. Procurar fazer pela pressão se possível."

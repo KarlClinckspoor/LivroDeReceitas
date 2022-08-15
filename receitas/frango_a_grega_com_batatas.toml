@@ -1,0 +1,65 @@
+[cabecalho]
+nome = "Frango a grega com batatas"
+testado = true
+karlAprova = true
+label = 'rec:frango_grega_batatas'
+tipo = 'salgado'
+tags = ['assado', 'frango']
+
+[[ingredientes]]
+qtde = 4
+unidade = 'unidades'
+nome = 'coxa, sobrecoxa, peito de frango'
+obs = 'ou combinações, suficiente para cobrir assadeira'
+
+[[ingredientes]]
+qtde = 4
+unidade = "unidades"
+nome = 'batatas'
+
+[[ingredientes]]
+qtde = 0.5
+unidade = 'unidade'
+nome = 'limão'
+obs = 'para fazer suco'
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = 'sal'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'tanto'
+nome = 'alecrim picado'
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = 'orégano seco'
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = 'pimenta vermelha moída'
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = 'azeite'
+
+[[modoDePreparo]]
+descr = "Marinar o frango nos temperos por 1-2 horas."
+
+[[modoDePreparo]]
+descr = "Descascar as batatas e cortá-las em pedaços relativamente pequenos (quartos)"
+footnote = "Se o corte for peito, que cozinha rápido, colocar as batatas no microondas por 4 minutos ou mais para cozinhá-las antes"
+
+[[modoDePreparo]]
+descr = "Aquecer o frango a 250 graus Celcius, ou 200 caso seja peito"
+
+[[modoDePreparo]]
+descr = "Colocar o frango com as sobras da marinada, e um pouco de caldo de frango se tiver, numa travessa e assar por 50 minutos. Se tiver somente peito, que seca rápido, colocar somente por 15 minutos, com a travessa coberta com papel alumínio. Se as batatas ainda estiverem duras, remover o frango, guardar, e deixar as batatas assarem até amolecer. Retornar o frango para reaquecer e servir."
+
+[NotasExtras]
+descr = "Requentar no AirFryer por 10 minutos a 140 graus Celcius funcionou bem."

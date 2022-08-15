@@ -1,0 +1,46 @@
+[cabecalho]
+nome = "Filé de Tilápia frito"
+testado = true
+karlAprova = true
+karenAprova = true
+label = "rec:file_tilapia_frito"
+tipo = "salgado"
+tags = ['peixe', 'fritura']
+
+[[ingredientes]]
+qtde = 1
+unidade = "filé"
+nome = 'tilápia/Saint peter'
+obs = 'aberto'
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = 'alho picado'
+
+[[ingredientes]]
+qtde = 1
+unidade = "tanto"
+nome = 'sal'
+
+[[ingredientes]]
+qtde = 0.5
+unidade = 'unidade'
+nome = 'limão'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'tanto'
+nome = 'azeite'
+
+[[modoDePreparo]]
+descr = "Recobrir o peixe com o alho picado, sal e limão"
+
+[[modoDePreparo]]
+descr = "Colocar óleo na frigideira e espalhar. Colocar o peixe delicadamente com um pegador"
+
+[[modoDePreparo]]
+descr = "Deixar cozinhar um lado para só depois virar. Evitar de manipular o peixe porque ele se desfaz facilmente"
+
+[[modoDePreparo]]
+descr = "No final, pode colocar um pouco de água para puxar o tempero para o peixe (deglaçagem)"

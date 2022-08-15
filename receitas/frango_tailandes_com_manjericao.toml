@@ -1,0 +1,84 @@
+[cabecalho]
+nome = "Frango tailandês com manjericão"
+testado = true
+karlAprova = true
+foto = './Fotos/frango_tailandes'
+label = "rec:frango_tailandes_com_manjericao"
+tipo = "salgado"
+tags = ['frito', 'apimentado']
+
+[[ingredientes]]
+qtde = 1
+unidade = "meio peito"
+nome = 'frango'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'unidade'
+nome = "pimentas vermelhas"
+obs = 'ou 2, pessoal'
+
+[[ingredientes]]
+qtde = 2
+unidade = "dentes"
+nome = 'alho'
+obs = 'ou 4, pessoal'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'colher de sopa'
+nome = 'shoyu'
+obs = 'ou 2, a gosto'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'colher de chá'
+nome = 'açúcar cristal'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'ramo'
+nome = 'manjericão'
+
+[[ingredientes]]
+qtde = 1
+unidade = 'colher de sopa'
+nome = 'molho de ostra'
+obs = 'opcional'
+
+[[modoDePreparo]]
+descr = "Cortar o frango em pedaços/iscas e reservar. Quanto menor o pedaço, mais rápido ficará cozido e menor será a chance de queimar os temperos. Fatias do tamanho de um dedo fino pareceram apropriadas."
+
+[[modoDePreparo]]
+descr = "Macerar a pimenta e o alho juntos"
+footnote = "No caso de alho pré-picado, só misturar"
+
+[[modoDePreparo]]
+descr = "Separar as folhas de manjericão do caule e lavar."
+
+[[modoDePreparo]]
+descr = "Misturar o shoyu, molho de ostra e açúcar cristal numa xícara"
+
+[[modoDePreparo]]
+descr = "Começar a aquecer o wok com óleo até ficar bem quente"
+
+[[modoDePreparo]]
+descr = "Fritar o macerado de alho e pimenta por alguns segundos, mexendo sempre."
+footnote = "No caso de alho já picado, que é úmido, espirra muito, então coloca com o óleo menos quente."
+
+[[modoDePreparo]]
+descr = "Acrescenter o frango e fritar por 2 minutos. Não pode estar nem cru nem cozido demais."
+footnote = "Se achar que está pouco cozido, deixar cozinhando um pouco mais com o fogo mais baixo, senão pode começar a queimar a pimenta e alho."
+
+[[modoDePreparo]]
+descr = "Acrescentar a mistura de molhos e fritar por mais 15 segundos."
+
+[[modoDePreparo]]
+descr = "Acrescentar o manjericão, misturar e desligar o fogo imediatamente"
+
+[[modoDePreparo]]
+descr = "Servir bem quente com o arroz e guarnecer com um ovo frito por cima."
+footnote = "Temperar o ovo não deve ser necessário, pois o prato já é bem temperado."
+
+[NotasExtras]
+descr = "Se for fazer arroz, já colocar para cozinhar no início da receita, que vai terminar junto com o frango"
